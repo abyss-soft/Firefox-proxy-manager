@@ -1,0 +1,28 @@
+{
+  "description": "Менеджер для включения/отключения прокси на определенных сайтах.",
+  "manifest_version": 2,
+  "name": "Proxy Manager",
+  "version": "1.0",
+  "homepage_url": "https://github.com/abyss-soft",
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": ["activeTab", "proxy", "storage", "<all_urls>"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "abyssSoft@github.com"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon.svg",
+    "default_title": "Proxy Manager",
+    "default_popup": "popup/popup.html"
+  }
+}
